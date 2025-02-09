@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div>
+    <div className="w-full  ">
       <Navbar />
       <main >{children}</main>
     </div>

@@ -5,7 +5,7 @@ import { FaLinkedin,FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa'
 
 export const Hero = () => {
     return (
-        <div className='max-w-7xl  mx-auto  px-4 sm:px-6 lg:px-8 '>
+        <div className='max-w-7xl mt-0 mx-auto  px-4 sm:px-6 lg:px-8 '>
             <div className='bg-gray-400  bg-opacity-15 py-6 rounded-xl gap-4 my-10 flex flex-col  items-cente'>
                 <div className='flex gap-3  justify-center '>
                     <Image src="/images/profile.jpg" alt='hero' height={50} width={50} className='rounded-full object-contain h-30' />
@@ -27,7 +27,7 @@ export const Hero = () => {
                         className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
                         aria-label="Facebook"
                     >
-                        <FaFacebook size={24} />
+                        <FaFacebook size={20} />
                     </a>
 
                     <a
@@ -37,7 +37,7 @@ export const Hero = () => {
                         className="p-3 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition-colors"
                         aria-label="Twitter"
                     >
-                        <FaTwitter size={24} />
+                        <FaTwitter size={20} />
                     </a>
 
 
@@ -48,7 +48,7 @@ export const Hero = () => {
                         className="p-3 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition-colors"
                         aria-label="Instagram"
                     >
-                        <FaInstagram size={24} />
+                        <FaInstagram size={20} />
                     </a>
 
 
@@ -59,7 +59,7 @@ export const Hero = () => {
                         className="p-3 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition-colors"
                         aria-label="LinkedIn"
                     >
-                        <FaLinkedin size={24} />
+                        <FaLinkedin size={20}  />
                     </a>
 
 

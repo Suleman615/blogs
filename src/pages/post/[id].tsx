@@ -15,7 +15,7 @@ const PostDetails: React.FC<PostProps> = ({ post, username }) => {
     }
 
     return (
-        <div className="w-full px-4">
+        <div className="w-full h-[75vh] px-4">
             <div className="max-w-7xl  mx-auto    px-4 sm:px-6 lg:px-8 py-6 border rounded-md  shadow-md">
                 <div className="bg-[url(/images/blog-cover.jpg)] h-fit   p-8  rounded-md  bg-cover">
                     <h1 className="text-2xl md:text-5xl font-bold w-full capitalize ">{post.title}</h1>

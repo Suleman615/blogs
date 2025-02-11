@@ -27,7 +27,7 @@ const Navbar = () => {
                    
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex space-x-6">
+                    <div className="hidden sm:flex space-x-6">
                         <Link href="/" className={`px-3 py-2 rounded-md text-md font-medium ${isActive('/')}`}>
                             Home
                         </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden text-gray-600 hover:text-gray-900 transition-all duration-1000"
+                        className="sm:hidden text-gray-600 hover:text-gray-900 transition-all duration-1000"
                         onClick={() => setMenuOpen(!menuOpen)}
                     >
                         {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -49,10 +49,10 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <div className={`overflow-hidden transition-all duration-1000 ${menuOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className={`overflow-hidden transition-all duration-1000 ${menuOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
 
 
-                    <div className="md:hidden bg-white w-full flex flex-col space-y-2 py-3">
+                    <div className="sm:hidden bg-white w-full flex flex-col space-y-2 py-3">
                         <Link
                             href="/"
                             className={`block px-4 py-2 text-md font-medium ${isActive('/')}`}

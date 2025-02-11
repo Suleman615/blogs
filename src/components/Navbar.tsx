@@ -15,14 +15,16 @@ const Navbar = () => {
 
     return (
         <nav className="bg-white py-2  w-full sticky select-none transition-all duration-1000">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8">
                 <div className="flex justify-between items-center h-16">
 
 
                     {/* LOGO*/}
                     <div className={`text-5xl font-bold text-gray-900 ${geist.className}`}>
-                        <Link  href="/">My Blogs</Link>
+                        <Link href="/">My Blogs</Link>
                     </div>
+
+                   
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-6">
@@ -35,6 +37,8 @@ const Navbar = () => {
                     </div>
 
 
+
+
                     {/* Mobile Menu Button */}
                     <button
                         className="md:hidden text-gray-600 hover:text-gray-900 transition-all duration-1000"
@@ -44,10 +48,11 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                {/* Mobile Menu w */}
-                <div className={`overflow-hidden transition-all duration-1000 ${menuOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}
-                >
-                    <div className="md:hidden flex flex-col space-y-2 py-3">
+                {/* Mobile Menu */}
+                <div className={`overflow-hidden transition-all duration-1000 ${menuOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'}`}>
+
+
+                    <div className="md:hidden bg-white w-full flex flex-col space-y-2 py-3">
                         <Link
                             href="/"
                             className={`block px-4 py-2 text-md font-medium ${isActive('/')}`}
@@ -63,7 +68,10 @@ const Navbar = () => {
                             About
                         </Link>
                     </div>
+
                 </div>
+
+               
             </div>
         </nav>
     );

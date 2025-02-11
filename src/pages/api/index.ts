@@ -5,12 +5,7 @@ export interface Post {
     body: string;
   }
 
-//   export interface User {
-//   id: number;
-//   name: string;
-//   username: string;
-//   email: string;
-// }
+
   
   export async function fetchPosts(): Promise<Post[]> {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");

@@ -10,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="w-full  ">
       <Navbar />
-      <main >{children}</main>
+      <main  >{children}</main>
       <Footer />
     </div>
   );

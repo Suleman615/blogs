@@ -24,7 +24,6 @@ const PostDetails: React.FC<PostProps> = ({ post, username }) => {
                 <div className="flex justify-between py-4">
                 <p className="text-gray-500 "><i>Post ID:</i> <span className="text-gray-900 font-semibold">{post.id}</span></p>
                 <section className="flex">
-                    {/* <FiEdit3 size={24} className="text-gray-500" /> */}
                     <p className="text-gray-500 "><i>Auther:</i> <span className="text-gray-900 font-semibold">{username}</span> </p>
                 </section>
                 </div>

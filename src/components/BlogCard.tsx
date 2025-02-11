@@ -9,7 +9,7 @@ interface BlogCardProps {
 
 export const BlogCard = ({id,title,body}:BlogCardProps) => {
   return (
-    <div key={id} className={`bg-gray-100 p-4  flex flex-col justify-between rounded-xl border-b-4 ${(id % 2 === 0) ? ' border-b-amber-800' : ' border-b-sky-900'}`}>
+    <div key={id} className={`bg-gray-100 p-4  flex flex-col justify-between rounded-xl border-b-4 ${(id % 2 === 0) ? ' border-b-rose-950' : ' border-b-blue-950'}`}>
     <Link href={`/post/${id}`} className='text-xl capitalize font-bold hover:underline'>{title}</Link>
     <p>{body.length > 100 ? `${body.slice(0, 100)}...` : body}
     </p>

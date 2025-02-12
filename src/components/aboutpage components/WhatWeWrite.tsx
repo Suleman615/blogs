@@ -6,6 +6,8 @@ const WhatWeWrite = () => {
             <h1 className='text-3xl py-2 font-bold text-center font-serif'>What we write about:</h1>
             <p className='px-2 lg:px-72  text-center'>We cover a wide range of topics to ensure there’s something for everyone. Our goal is to provide valuable, informative, and entertaining content that meets the diverse interests of our audience. Below are some of the categories we focus on, along with what you can expect from each:</p>
            
+
+
            
             <div className='flex my-10 flex-wrap justify-center gap-10 px-10 '>
                 <div className=' p-4 rounded-lg  bg-[url(/images/lifestyle.jpg)] h-64 w-64   bg-contain bg-no-repeat '>
@@ -30,7 +32,7 @@ const WhatWeWrite = () => {
                 </div>
                 <div className=' p-4 rounded-lg  bg-[url(/images/sports.jpg)] h-64 w-64 bg-contain bg-no-repeat '>
                     <h1 className='text-xl font-semibold text-black font-serif text-center'>Sports</h1>
-                    <p className='text-center pt-2 text-black font-semibold'>Get the latest match analysis, player spotlights, and sports news from football, basketball, cricket, and more. Stay updated with fitness tips and expert insights into the world of athletics.</p>
+                    <p className='text-center pt-2 text-gray-300 font-semibold'>Get the latest match analysis, player spotlights, and sports news from football, basketball, cricket, and more. Stay updated with fitness tips and expert insights into the world of athletics.</p>
                 </div>
             </div>
 

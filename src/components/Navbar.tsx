@@ -48,6 +48,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
+
                 {/* Mobile Menu */}
                 <div className={`overflow-hidden transition-all duration-1000 ${menuOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
 

@@ -35,7 +35,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Implemented `getStaticPaths` in `post/[id].js` to pre-generate pages for individual posts.
 
 ### Search Functionality
-- (Optional) Implemented hashtag-based filtering to allow users to search for posts using hashtags.
+- Implemented hashtag-based filtering to allow users to search for posts using hashtags.
 
 ### UI & Responsive Design
 - Used Tailwind CSS for styling and ensured a mobile-friendly experience.

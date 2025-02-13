@@ -1,40 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Blog Application
 
-## Getting Started
+A simple blog application built with **Next.js** and **Tailwind CSS**, fetching posts from the JSONPlaceholder API. This project demonstrates static site generation, dynamic routing, and responsive design.
 
-First, run the development server:
+## Steps to Run the Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/blog-app.git
+   cd blog-app
+   ```
 
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the Development Server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+ 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Approach & Advanced Features
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Static Site Generation (SSG)
+- Used `getStaticProps` on the homepage to fetch posts from the JSONPlaceholder API at build time.
+- Implemented `getStaticPaths` in `post/[id].js` to pre-generate pages for individual posts.
 
-## Learn More
+### Search Functionality
+- (Optional) Implemented hashtag-based filtering to allow users to search for posts using hashtags.
 
-To learn more about Next.js, take a look at the following resources:
+### UI & Responsive Design
+- Used Tailwind CSS for styling and ensured a mobile-friendly experience.
+- Added active route highlighting in the navigation bar using Next.js `useRouter`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### Deployment
+- Deployed to **Vercel**, taking advantage of its optimized hosting for Next.js applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.

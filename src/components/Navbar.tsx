@@ -28,10 +28,10 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden sm:flex space-x-6">
-                        <Link href="/" className={`px-3 py-2 rounded-md text-md font-medium ${isActive('/')}`}>
+                        <Link href="/" className={`px-3 py-2 rounded-md text-md font-medium ${isActive('/')} active:bg-gray-50`}>
                             Home
                         </Link>
-                        <Link href="/about" className={`px-3 py-2 rounded-md text-md font-medium ${isActive('/about')}`}>
+                        <Link href="/about" className={`px-3 py-2 rounded-md text-md  font-medium ${isActive('/about')} active:bg-gray-50`}>
                             About
                         </Link>
                     </div>

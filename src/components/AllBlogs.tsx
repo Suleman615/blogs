@@ -9,7 +9,6 @@ const AllBlogs = () => {
     const [blogs, setBlogs] = useState<Post[]>([]);
     const [loading, setLoading] = useState(true);
     const [filteredPosts, setFilteredPosts] = useState<Post[]>([]);
-    const [tagValue, setTagValue] = useState(false);
     const [error, setError] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const postsPerPage = 9;
@@ -43,13 +42,11 @@ const AllBlogs = () => {
 
         if (value.trim() === "") {
             setFilteredPosts(blogs);
-            // setTagValue(false);
             return;
         }
 
         const filtered = blogs.filter(post => post.title.toLowerCase().includes(value.toLowerCase()));
         setFilteredPosts(filtered);
-        // setTagValue(true);
         setCurrentPage(1); // Reset pagination when searching
     };
 
@@ -65,10 +62,10 @@ const AllBlogs = () => {
                 <input
                     onChange={(e) => handleSearchTag(e.target.value)}
                     type="text"
-                    placeholder="Search blogs by title..."
-                    className="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Search by keyword..."
+                    className="w-full px-4 py-2 border-2 border-gray-800 rounded-full focus:outline-none focus:ring-1 focus:ring-gray-900"
                 />
-                <FiSearch className="absolute right-3 top-3 text-gray-500" />
+                <FiSearch size={20} className="absolute   right-4 top-3 text-gray-700" />
             </div>
 
             <h1 className="text-4xl font-serif text-center font-bold py-8">Blogs</h1>
